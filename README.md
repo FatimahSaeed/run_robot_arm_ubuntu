@@ -92,7 +92,12 @@ _الآن بيئة العمل لدينا جاهزة لتجربة تشغيل ال
 **نلاحظ الحركة في برنامج Gazebo أكثر واقعية من RViz.**
 
 **مصادر ساعدتني لتهيئة بيئة العمل**
-
+	
+- INSTALLING & GETTING STARTED WITH ROS | How to install ROS & How to setup Catkin Workspace on Ubuntu
 https://www.youtube.com/watch?v=GBBQqiGvOSw
+
+- Create a workspace by using catkin_make
+http://wiki.ros.org/catkin/Tutorials/create_a_workspace 
+
 
 </div>
