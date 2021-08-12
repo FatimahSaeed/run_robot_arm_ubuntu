@@ -18,29 +18,26 @@
 
  الأمر التالي سيقوم بتشغيل نظام ROS في Terminal:
  
- `$ roscore
-`
+ `$ roscore`
  
  
 الخطوة الثانية: 
  
  * تجهيز بيئة عمل Catkin عبر الأوامر التالية على Terminal:
  
- `$ source /opt/ros/melodic/setup.bash
+`$ source /opt/ros/melodic/setup.bash
  
 $ mkdir -p ~/catkin_ws/src
 	
 $ cd ~/catkin_ws/
 	
-$ catkin_make
-`
+$ catkin_make`
  
  ملاحظة قد تحتاج لجلب ملف bash عبر الأمر التالي:
- 
- `$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+
+`$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 	
-	$ source ~/.bashrc
-`
+$ source ~/.bashrc`
  
  الآن لدينا ملف بإسم catkin_ws يمكننا بداخله جلب الملفات اللازمة لذراع الروبوت 
  
@@ -50,13 +47,14 @@ $ catkin_make
  
  للقيام بتحميل الملفات يجب تثبيت GitHub  `$ sudo apt install git`
  
- نفتح ملف catkin `$  cd ~/catkin_ws/src` 
+ نفتح ملف catkin `$ cd ~/catkin_ws/src` 
  
  لتحميل الملفات داخل الملف  `$ git clone https://github.com/smart-methods/arduino_robot_arm` 
  
  تثبيت الملحقات المطلوبة لتشغيل ذراع الروبوت:
  
 ` $ cd ~/catkin_ws
+	
 	$ rosdep install --from-paths src --ignore-src -r -y
 	
 	$ sudo apt-get install ros-melodic-moveit
