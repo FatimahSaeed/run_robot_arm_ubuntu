@@ -29,13 +29,16 @@
  `$ source /opt/ros/melodic/setup.bash
  
 $ mkdir -p ~/catkin_ws/src
+	
 $ cd ~/catkin_ws/
+	
 $ catkin_make
 `
  
  ملاحظة قد تحتاج لجلب ملف bash عبر الأمر التالي:
  
  `$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+	
 	$ source ~/.bashrc
 `
  
@@ -55,9 +58,13 @@ $ catkin_make
  
 ` $ cd ~/catkin_ws
 	$ rosdep install --from-paths src --ignore-src -r -y
+	
 	$ sudo apt-get install ros-melodic-moveit
+	
 	$ sudo apt-get install ros-melodic-joint-state-publisher ros-melodic-joint-state-publisher-gui
+	
 	$ sudo apt-get install ros-melodic-gazebo-ros-control joint-state-publisher
+	
 	$ sudo apt-get install ros-melodic-ros-controllers ros-melodic-ros-control`
 
 لتفعيل حزمة الذراع: `$ catkin_make` 
